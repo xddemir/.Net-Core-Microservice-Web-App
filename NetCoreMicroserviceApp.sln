@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7DD72B08-8E78-4CD6-AE19-6F7172228439}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{7AC9C907-C8C4-41B6-91D6-0D1C500CE2A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Services.Catalog", "Services\Catalog\FreeCourse.Services.Catalog\FreeCourse.Services.Catalog.csproj", "{45646F30-D71B-4416-AD20-B470BE9613F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{69D59C7A-9687-4455-8B05-50738C1133FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Shared", "Shared\FreeCourse.Shared\FreeCourse.Shared.csproj", "{846D804D-B33E-41F8-9B51-D12A125FBFDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45646F30-D71B-4416-AD20-B470BE9613F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45646F30-D71B-4416-AD20-B470BE9613F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45646F30-D71B-4416-AD20-B470BE9613F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45646F30-D71B-4416-AD20-B470BE9613F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846D804D-B33E-41F8-9B51-D12A125FBFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846D804D-B33E-41F8-9B51-D12A125FBFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846D804D-B33E-41F8-9B51-D12A125FBFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846D804D-B33E-41F8-9B51-D12A125FBFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AC9C907-C8C4-41B6-91D6-0D1C500CE2A5} = {7DD72B08-8E78-4CD6-AE19-6F7172228439}
+		{45646F30-D71B-4416-AD20-B470BE9613F3} = {7AC9C907-C8C4-41B6-91D6-0D1C500CE2A5}
+		{846D804D-B33E-41F8-9B51-D12A125FBFDC} = {69D59C7A-9687-4455-8B05-50738C1133FE}
+	EndGlobalSection
+EndGlobal
