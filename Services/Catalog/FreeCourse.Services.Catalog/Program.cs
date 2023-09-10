@@ -20,6 +20,7 @@ builder.Services.AddSingleton<IDatabaseSettings>(provider =>
 });
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICourseService, CourseService>();
 
 var app = builder.Build();
 
