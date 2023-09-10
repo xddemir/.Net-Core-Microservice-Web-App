@@ -28,9 +28,9 @@ public class CategoryService : ICategoryService
         return Response<List<CategoryDTO>>.Success(_mapper.Map<List<CategoryDTO>>(categories), 200);
     }
 
-    public async Task<Response<CategoryDTO>> CreateAsync(Category category)
+    public async Task<Response<CategoryDTO>> CreateAsync(CategoryDTO category)
     {
-        await _categoryCollection.InsertOneAsync(category);
+        await _categoryCollection.InsertOneAsync(_mapper.Map<Category>(category));
         return Response<CategoryDTO>.Success(_mapper.Map<CategoryDTO>(category), 201);
     }
 
