@@ -1,9 +1,9 @@
 ﻿using FreeCourse.Shared.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FreeCourse.Shared.ControllerBase
+namespace FreeCourse.Shared.ControllerBases
 {
-    public class CustomControllerBase : Microsoft.AspNetCore.Mvc.ControllerBase 
+    public class CustomControllerBase : ControllerBase
     {
         public IActionResult CreateActionResultInstance<T>(Response<T> response)
         {

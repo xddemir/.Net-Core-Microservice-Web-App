@@ -1,6 +1,6 @@
 ﻿using FreeCourse.Services.Catalog.DTOs;
 using FreeCourse.Services.Catalog.Services;
-using FreeCourse.Shared.ControllerBase;
+using FreeCourse.Shared.ControllerBases;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FreeCourse.Services.Catalog.Controllers;
@@ -26,7 +26,7 @@ public class CategoryController: CustomControllerBase
     }
     
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetAllByAsync(string id)
+    public async Task<IActionResult> GetByIdAsync(string id)
     {
         var result = await _categoryService.GetByIdAsync(id);
         return CreateActionResultInstance(result);

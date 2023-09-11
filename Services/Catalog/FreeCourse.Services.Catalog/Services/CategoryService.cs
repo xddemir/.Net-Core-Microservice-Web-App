@@ -30,13 +30,14 @@ public class CategoryService : ICategoryService
 
     public async Task<Response<CategoryDTO>> CreateAsync(CategoryDTO category)
     {
-        await _categoryCollection.InsertOneAsync(_mapper.Map<Category>(category));
-        return Response<CategoryDTO>.Success(_mapper.Map<CategoryDTO>(category), 201);
+        var cdto = _mapper.Map<Category>(category);
+        await _categoryCollection.InsertOneAsync(cdto);
+        return Response<CategoryDTO>.Success(_mapper.Map<CategoryDTO>(cdto), 201);
     }
 
     public async Task<Response<CategoryDTO>> GetByIdAsync(string id)
     {
-        var category = await _categoryCollection.FindAsync<Category>(x => x.Id == id);
+        var category = await _categoryCollection.Find<Category>(x => x.Id == id).FirstAsync();
 
         if (category == null)
             return Response<CategoryDTO>.Fail("Category Not Found", 404);
