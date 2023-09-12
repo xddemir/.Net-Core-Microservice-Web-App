@@ -140,3 +140,5 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\IdentityServer\FreeCourse.Id
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\IdentityServer\FreeCourse.IdentityServer\obj\Debug\netcoreapp3.1\FreeCourse.IdentityServer.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\IdentityServer\FreeCourse.IdentityServer\obj\Debug\netcoreapp3.1\FreeCourse.IdentityServer.pdb
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\IdentityServer\FreeCourse.IdentityServer\obj\Debug\netcoreapp3.1\FreeCourse.IdentityServer.genruntimeconfig.cache
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\FreeCourse.Shared.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\IdentityServer\FreeCourse.IdentityServer\bin\Debug\netcoreapp3.1\FreeCourse.Shared.pdb
