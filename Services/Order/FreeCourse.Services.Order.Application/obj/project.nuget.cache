@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "BG1vzQI4tx+LA8zT+CTs5x3nsGKd8bGX9ptMF0Ishmp0eWTgZdqLoHiz5CHZtiFHPka/WsMWX3ZSgtH3d7Y+8Q==",
+  "dgSpecHash": "/8iLkPW7oig9T99Uj9ZQC0DQmGkcfAWXnQDO9A3EXK/I3mvFnAVevj8Jeos0Q0vH0r6ghgD3A+sNl01JsWHV9g==",
   "success": true,
   "projectFilePath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Application\\FreeCourse.Services.Order.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\doguk\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
