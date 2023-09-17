@@ -107,6 +107,69 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "FreeCourse.Services.Order.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FreeCourse.Services.Order.Domain": "1.0.0",
+          "FreeCourse.Services.Order.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FreeCourse.Services.Order.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeCourse.Services.Order.Application.dll": {}
+        }
+      },
+      "FreeCourse.Services.Order.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FreeCourse.Services.Order.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FreeCourse.Services.Order.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeCourse.Services.Order.Domain.dll": {}
+        }
+      },
+      "FreeCourse.Services.Order.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FreeCourse.Services.Order.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeCourse.Services.Order.Domain.Core.dll": {}
+        }
+      },
+      "FreeCourse.Services.Order.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FreeCourse.Services.Order.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FreeCourse.Services.Order.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeCourse.Services.Order.Infrastructure.dll": {}
+        }
+      },
+      "FreeCourse.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/FreeCourse.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeCourse.Shared.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -460,10 +523,37 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "FreeCourse.Services.Order.Application/1.0.0": {
+      "type": "project",
+      "path": "../FreeCourse.Services.Order.Application/FreeCourse.Services.Order.Application.csproj",
+      "msbuildProject": "../FreeCourse.Services.Order.Application/FreeCourse.Services.Order.Application.csproj"
+    },
+    "FreeCourse.Services.Order.Domain/1.0.0": {
+      "type": "project",
+      "path": "../FreeCourse.Services.Order.Domain/FreeCourse.Services.Order.Domain.csproj",
+      "msbuildProject": "../FreeCourse.Services.Order.Domain/FreeCourse.Services.Order.Domain.csproj"
+    },
+    "FreeCourse.Services.Order.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../FreeCourse.Services.Order.Domain.Core/FreeCourse.Services.Order.Domain.Core.csproj",
+      "msbuildProject": "../FreeCourse.Services.Order.Domain.Core/FreeCourse.Services.Order.Domain.Core.csproj"
+    },
+    "FreeCourse.Services.Order.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FreeCourse.Services.Order.Infrastructure/FreeCourse.Services.Order.Infrastructure.csproj",
+      "msbuildProject": "../FreeCourse.Services.Order.Infrastructure/FreeCourse.Services.Order.Infrastructure.csproj"
+    },
+    "FreeCourse.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../../Shared/FreeCourse.Shared/FreeCourse.Shared.csproj",
+      "msbuildProject": "../../../Shared/FreeCourse.Shared/FreeCourse.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FreeCourse.Services.Order.Application >= 1.0.0",
+      "FreeCourse.Shared >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -493,7 +583,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Application\\FreeCourse.Services.Order.Application.csproj": {
+              "projectPath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Application\\FreeCourse.Services.Order.Application.csproj"
+            },
+            "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj": {
+              "projectPath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Shared\\FreeCourse.Shared\\FreeCourse.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

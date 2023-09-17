@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "FreeCourse.Services.Order.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FreeCourse.Services.Order.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeCourse.Services.Order.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FreeCourse.Services.Order.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../FreeCourse.Services.Order.Domain.Core/FreeCourse.Services.Order.Domain.Core.csproj",
+      "msbuildProject": "../FreeCourse.Services.Order.Domain.Core/FreeCourse.Services.Order.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "FreeCourse.Services.Order.Domain.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\doguk\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Domain.Core\\FreeCourse.Services.Order.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Domain.Core\\FreeCourse.Services.Order.Domain.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

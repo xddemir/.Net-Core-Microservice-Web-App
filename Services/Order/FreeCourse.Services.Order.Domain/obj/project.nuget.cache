@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4k8w0SaLD3prN5oY6eQfId1Mxceyxgj22ikyBD9WlBRMpBZpJ67evgFE4nVQdwBJuceDURGCOYay6oya0kv90g==",
+  "dgSpecHash": "DF5F1Vmq8ZmmBmFcYLuiOyRDMnun0/i2l/2xwOavASllHG4PPfSumg5zs4QVjz34v3HdM3CU46MaTlop9cs9rw==",
   "success": true,
   "projectFilePath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Domain\\FreeCourse.Services.Order.Domain.csproj",
   "expectedPackageFiles": [],
