@@ -9,7 +9,7 @@ public class CustomMapping : Profile
     public CustomMapping()
     {
         CreateMap<Domain.OrderAggregate.Order, OrderDto>().ReverseMap();
-        CreateMap<Domain.OrderAggregate.OrderItem, OrderItem>().ReverseMap();
-        CreateMap<Domain.OrderAggregate.Address, AddressDto>().ReverseMap();
+        CreateMap<OrderItem, OrderItemDto>().ReverseMap();
+        CreateMap<Address, AddressDto>().ReverseMap();
     }
 }

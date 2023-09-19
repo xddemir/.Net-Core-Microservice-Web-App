@@ -83,3 +83,4 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Se
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.API\bin\Debug\net7.0\MediatR.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.API\bin\Debug\net7.0\MediatR.Contracts.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.API\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
