@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9RJbhknfEzffmISHs9hjUPCzMdiaz52ebflfgvAPBnfxgdbGzQqNaGsXMroEPJhWtfUETF9JEADP+v81LI1Vmg==",
+  "dgSpecHash": "lK7yR0qgZJgffd7EwRbaLhZIVvMMLrmTTHWDcB6a39JRMl1C39vTTPVgS15Wxy8QBOtAMyGyplrYvpbbceZ33A==",
   "success": true,
   "projectFilePath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\Order\\FreeCourse.Services.Order.Infrastructure\\FreeCourse.Services.Order.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -20,7 +20,6 @@
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.11\\microsoft.entityframeworkcore.design.7.0.11.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.11\\microsoft.entityframeworkcore.sqlserver.7.0.11.nupkg.sha512",
-    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.11\\microsoft.entityframeworkcore.tools.7.0.11.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

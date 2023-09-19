@@ -1048,6 +1048,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "FreeCourse.Services.Order.Domain": "1.0.0",
+          "FreeCourse.Shared": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11"
         },

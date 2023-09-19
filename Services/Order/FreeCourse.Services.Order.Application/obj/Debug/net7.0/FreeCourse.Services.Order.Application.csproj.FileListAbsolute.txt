@@ -17,3 +17,5 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Se
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net7.0\refint\FreeCourse.Services.Order.Application.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net7.0\FreeCourse.Services.Order.Application.pdb
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.Application\obj\Debug\net7.0\ref\FreeCourse.Services.Order.Application.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net7.0\FreeCourse.Shared.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.Application\bin\Debug\net7.0\FreeCourse.Shared.pdb
