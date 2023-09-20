@@ -11,10 +11,19 @@ builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
         .AddEnvironmentVariables();
 });
 
+builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme", options =>
+{
+    options.Authority = builder.Configuration["IdentityServerURL"];
+    options.Audience = "resource_getaway";
+    options.RequireHttpsMetadata = false;
+});
+
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 
 await app.UseOcelot();
+
+app.UseAuthentication();
 
 app.Run();

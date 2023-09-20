@@ -19,6 +19,7 @@ namespace FreeCourse.IdentityServer
             new ApiResource("resource_discount"){Scopes = {"discount_fullpermission"}},
             new ApiResource("resource_order"){Scopes = {"order_fullpermission"}},
             new ApiResource("resource_fakepayment"){Scopes = {"fakepayment_fullpermission"}},
+            new ApiResource("resource_gateway"){Scopes = {"gateway_fullpermission"}},
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -29,7 +30,6 @@ namespace FreeCourse.IdentityServer
                     new IdentityResources.OpenId(),
                     new IdentityResources.Profile(),
                     new IdentityResource(){Name = "roles", DisplayName = "Roles", Description = "User Roles", UserClaims = new[] {"role"}}
-                    
                };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -41,6 +41,7 @@ namespace FreeCourse.IdentityServer
               new ApiScope("discount_fullpermission", "Full Access to Discount"),
               new ApiScope("order_fullpermission", "Full Access to Order"),
               new ApiScope("fakepayment_fullpermission", "Full Access to FakePayment"),
+              new ApiScope("gateway_fullpermission", "Full Access to Gateway"),
               new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -53,7 +54,13 @@ namespace FreeCourse.IdentityServer
                   ClientId = "WebMvcClient",
                   ClientSecrets = {new Secret("secret".Sha256())},
                   AllowedGrantTypes = { GrantType.ClientCredentials },
-                  AllowedScopes = {"catalog_fullpermission", "photo_stock_fullpermission", IdentityServerConstants.LocalApi.ScopeName} 
+                  AllowedScopes = 
+                  { 
+                    "gateway_fullpermission", 
+                    "catalog_fullpermission", 
+                    "photo_stock_fullpermission",
+                    IdentityServerConstants.LocalApi.ScopeName
+                  } 
               }
               ,
               new Client()
@@ -64,6 +71,7 @@ namespace FreeCourse.IdentityServer
                   ClientSecrets = {new Secret("secret".Sha256())},
                   AllowedGrantTypes = { GrantType.ResourceOwnerPassword },
                   AllowedScopes = {
+                    "gateway_fullpermission",
                       "order_fullpermission",
                       "discount_fullpermission",
                       "basket_fullpermission",

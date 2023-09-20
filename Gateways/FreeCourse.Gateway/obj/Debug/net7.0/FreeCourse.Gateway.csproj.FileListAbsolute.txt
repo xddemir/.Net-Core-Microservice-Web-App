@@ -36,3 +36,10 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\obj\Debug\net7.0\FreeCourse.Gateway.pdb
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\obj\Debug\net7.0\FreeCourse.Gateway.genruntimeconfig.cache
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\obj\Debug\net7.0\ref\FreeCourse.Gateway.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Gateways\FreeCourse.Gateway\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
