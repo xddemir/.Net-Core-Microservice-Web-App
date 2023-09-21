@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using Microsoft.VisualBasic;
 
 namespace FreeCourse.Web.Services;
 
@@ -107,13 +106,75 @@ public class IdentityService: IIdentityService
 
     }
 
-    public Task<TokenResponse> GetAccessTokenByRefreshToken()
+    public async Task<TokenResponse> GetAccessTokenByRefreshToken()
     {
-        throw new NotImplementedException();
+        // 1. Signin and retrieve access token
+        var discovery = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+        {
+            Address = _serviceApiSettings.BaseUri,
+            Policy = new DiscoveryPolicy { RequireHttps = false },
+        });
+
+        if (discovery.IsError) throw discovery.Exception;
+
+        var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.Resource);
+
+        RefreshTokenRequest refreshTokenRequest = new()
+        {
+            ClientId = _clientSettings.WebClientForUser.ClientId,
+            ClientSecret = _clientSettings.WebClientForUser.ClientSecret,
+            RefreshToken = refreshToken,
+            Address = discovery.TokenEndpoint
+        };
+
+        var token = await _httpClient.RequestRefreshTokenAsync(refreshTokenRequest);
+
+        if (token.IsError) return null;
+
+        var authenticationTokens = new List<AuthenticationToken>()
+        {
+            new AuthenticationToken() { Name = OpenIdConnectParameterNames.AccessToken, Value = token.AccessToken },
+            new AuthenticationToken() { Name = OpenIdConnectParameterNames.RefreshToken, Value = token.RefreshToken },
+            new AuthenticationToken()
+            {
+                Name = OpenIdConnectParameterNames.ExpiresIn,
+                Value = DateTime.Now.AddSeconds(token.ExpiresIn).ToString("O", CultureInfo.InvariantCulture)
+            }
+        };
+
+        var authenticationResult = await _httpContextAccessor.HttpContext.AuthenticateAsync();
+
+        var properties = authenticationResult.Properties;
+        properties.StoreTokens(authenticationTokens);
+
+        await _httpContextAccessor.HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+            authenticationResult.Principal, properties);
+        
+        return token;
     }
 
-    public Task RevokeRefreshToken()
+    public async Task RevokeRefreshToken()
     {
-        throw new NotImplementedException();
+        // 1. Signin and retrieve access token
+        var discovery = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+        {
+            Address = _serviceApiSettings.BaseUri,
+            Policy = new DiscoveryPolicy { RequireHttps = false },
+        });
+
+        if (discovery.IsError) throw discovery.Exception;
+
+        var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.Resource);
+
+        TokenRevocationRequest tokenRevocationRequest = new()
+        {
+            ClientId = _clientSettings.WebClientForUser.ClientId,
+            ClientSecret = _clientSettings.WebClientForUser.ClientSecret,
+            Address = discovery.RevocationEndpoint,
+            Token = refreshToken,
+            TokenTypeHint = "refresh_token"
+        };
+
+        await _httpClient.RevokeTokenAsync(tokenRevocationRequest);
     }
 }

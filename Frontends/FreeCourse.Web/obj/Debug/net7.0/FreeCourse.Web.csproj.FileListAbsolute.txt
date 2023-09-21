@@ -29,3 +29,15 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj\Debug\net7.0\FreeCourse.Web.pdb
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj\Debug\net7.0\FreeCourse.Web.genruntimeconfig.cache
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj\Debug\net7.0\ref\FreeCourse.Web.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj\Debug\net7.0\FreeCourse.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\IdentityModel.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FreeCourse.Shared.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FreeCourse.Shared.pdb
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj\Debug\net7.0\FreeCourse.Web.csproj.CopyComplete

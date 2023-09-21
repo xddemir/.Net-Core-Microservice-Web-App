@@ -10,14 +10,20 @@
         }
       ],
       "UpstreamPathTemplate": "/services/catalog/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "UpstreamScheme":"http",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Put",
+        "Delete"
+      ],
+      "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": ["catalog_fullpermission"]
-      } 
+        "AllowedScopes": [
+          "catalog_fullpermission"
+        ]
+      }
     },
-    
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -37,10 +43,11 @@
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": ["photo_stock_fullpermission"]
+        "AllowedScopes": [
+          "photo_stock_fullpermission"
+        ]
       }
     },
-    
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -60,10 +67,11 @@
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": ["basket_fullpermission"]
+        "AllowedScopes": [
+          "basket_fullpermission"
+        ]
       }
     },
-    
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -83,10 +91,11 @@
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": ["discount_fullpermission"]
+        "AllowedScopes": [
+          "discount_fullpermission"
+        ]
       }
     },
-    
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -106,10 +115,11 @@
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": ["order_fullpermission"]
+        "AllowedScopes": [
+          "order_fullpermission"
+        ]
       }
     },
-    
     {
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -129,7 +139,9 @@
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": ["fakepayment_fullpermission"]
+        "AllowedScopes": [
+          "fakepayment_fullpermission"
+        ]
       }
     }
   ],
