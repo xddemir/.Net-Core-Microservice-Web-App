@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@model UserViewModel
+
+<div class="row">
+    
+    <div class="col-md-9">
+        
+        <di class="card">
+            <h5 class="card-title">User Information</h5>
+            <table class="table table-striped">
+                <tr>
+                    <td>User Name</td>
+                    <td>@Model.UserName</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>@Model.Email</td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>@Model.City</td>
+                </tr>
+            </table>
+            
+        </di>
+    </div>
+    
+</div>

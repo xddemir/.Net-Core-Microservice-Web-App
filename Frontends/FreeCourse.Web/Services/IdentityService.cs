@@ -41,7 +41,6 @@ public class IdentityService: IIdentityService
      */
     public async Task<Response<bool>> SignIn(SigninInput signInInput)
     {
-        
         // 1. Signin and retrieve access token
         var discovery = await _httpClient.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
         {
@@ -117,7 +116,7 @@ public class IdentityService: IIdentityService
 
         if (discovery.IsError) throw discovery.Exception;
 
-        var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.Resource);
+        var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.RefreshToken);
 
         RefreshTokenRequest refreshTokenRequest = new()
         {
@@ -164,7 +163,7 @@ public class IdentityService: IIdentityService
 
         if (discovery.IsError) throw discovery.Exception;
 
-        var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.Resource);
+        var refreshToken = await _httpContextAccessor.HttpContext.GetTokenAsync(OpenIdConnectParameterNames.RefreshToken);
 
         TokenRevocationRequest tokenRevocationRequest = new()
         {

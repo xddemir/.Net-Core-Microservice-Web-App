@@ -145,6 +145,7 @@
       }
     }
   ],
+  "IdentityServerURL": "http://localhost:5001",
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000"
   }
