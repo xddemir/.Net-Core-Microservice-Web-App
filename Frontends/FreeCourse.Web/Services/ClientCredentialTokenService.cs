@@ -25,7 +25,7 @@ public class ClientCredentialTokenService : IClientCredentialTokenService
 
     public async Task<string> GetToken()
     {
-        var currentToken = await _clientAccessTokenCache.GetAsync("WebClientToken", new ClientAccessTokenParameters(){});
+        var currentToken = await _clientAccessTokenCache.GetAsync("WebClientToken", null);
 
         if (currentToken != null) return currentToken.AccessToken;
         
@@ -49,7 +49,7 @@ public class ClientCredentialTokenService : IClientCredentialTokenService
 
         if (newToken.IsError) throw newToken.Exception;
 
-        await _clientAccessTokenCache.SetAsync("WebClientToken", newToken.AccessToken, newToken.ExpiresIn, new ClientAccessTokenParameters(){});
+        await _clientAccessTokenCache.SetAsync("WebClientToken", newToken.AccessToken, newToken.ExpiresIn, null);
 
         return newToken.AccessToken;
 

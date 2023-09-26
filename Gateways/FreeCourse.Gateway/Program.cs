@@ -14,7 +14,7 @@ builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
 builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme", options =>
 {
     options.Authority = builder.Configuration["IdentityServerURL"];
-    options.Audience = "resource_getaway";
+    options.Audience = "resource_gateway";
     options.RequireHttpsMetadata = false;
 });
 

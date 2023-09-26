@@ -10,6 +10,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Courses</h5>
+                <a asp-controller="Course" asp-action="Create" class="btn btn-primary mb-2">Create Course</a>
                 @if (Model.Any())
                 {
                     <table class="table table-striped table-bordered">
@@ -25,6 +26,7 @@
                         @foreach (var item in Model)
                         {
                             <tr>
+                                <td>@item.Picture</td>
                                 <td>@item.Name</td>
                                 <td>@item.Price</td>
                                 <td>@item.Feature.Duration</td>

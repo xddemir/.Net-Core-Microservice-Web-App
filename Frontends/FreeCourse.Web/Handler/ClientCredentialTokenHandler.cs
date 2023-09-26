@@ -17,8 +17,10 @@ public class ClientCredentialTokenHandler : DelegatingHandler
 
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
+        var token = await _clientCredentialTokenService.GetToken();
+    
         request.Headers.Authorization =
-            new AuthenticationHeaderValue("Bearer", await _clientCredentialTokenService.GetToken());
+            new AuthenticationHeaderValue("Bearer", token);
 
         var response = await base.SendAsync(request, cancellationToken); 
 

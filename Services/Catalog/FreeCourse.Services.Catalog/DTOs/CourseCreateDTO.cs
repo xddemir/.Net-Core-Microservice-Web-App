@@ -10,7 +10,7 @@ public class CourseCreateDTO
 
     public string UserId { get; set; }
     
-    public string Picture { get; set; }
+    public string? Picture { get; set; }
 
     public FeatureDTO Feature { get; set; }
 

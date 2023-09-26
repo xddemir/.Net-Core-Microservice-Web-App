@@ -20,6 +20,8 @@ builder.Services.AddScoped<ResourceOwnerPasswordTokenHandler>();
 builder.Services.AddScoped<ClientCredentialTokenHandler>();
 builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
+builder.Services.AddAccessTokenManagement();
+
 builder.Services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();
 
 builder.Services.AddHttpClient<ICatalogService, CatalogService>(opt =>

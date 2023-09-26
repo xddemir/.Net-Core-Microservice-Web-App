@@ -41,3 +41,5 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FreeCourse.Shared.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FreeCourse.Shared.pdb
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\obj\Debug\net7.0\FreeCourse.Web.csproj.CopyComplete
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\IdentityModel.AspNetCore.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

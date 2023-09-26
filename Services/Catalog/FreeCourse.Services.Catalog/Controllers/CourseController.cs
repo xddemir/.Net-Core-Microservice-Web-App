@@ -24,8 +24,8 @@ public class CourseController : CustomControllerBase
         return CreateActionResultInstance(response);
     }
     
-    // course/GetAllByUser/5
-    [Route("api/[controller]/GetAllByUserId/{userId}")]
+    // course/GetAllByUserId/5
+    [Route("/api/[controller]/GetAllByUserId/{userId}")]
     [HttpGet]
     public async Task<IActionResult> GetByUserId(string userId)
     {
