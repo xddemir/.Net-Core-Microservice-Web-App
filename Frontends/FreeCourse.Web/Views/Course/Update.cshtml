@@ -1,22 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
+﻿@model CourseUpdateInput
 
-@model CourseCreateInput
+@{
+    ViewBag.Title = "Update";
+    Layout = "_Layout";
+}
 
 <div class="row">
     <div class="col-md-8 offset-md-2">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">
-                    Add Course
+                    Update Course
                 </h5>
                 <form asp-controller="Course" asp-action="Create" method="post" enctype="multipart/form-data">
                     <div asp-validation-summary="ModelOnly"></div>
+                    <input type="hidden" asp-for="Id"/>
+                    <input type="hidden" asp-for="UserId"/>
+                    <input type="hidden" asp-for="Picture"/>
                     <div class="mb-3">
                         <label class="form-label" asp-for="CategoryId"></label>
                         <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.categoryList">
-                            <option value="">Select Category</option>
                         </select>
                         <span class="text-danger" asp-validation-for="CategoryId"></span>
                     </div>
@@ -43,7 +46,7 @@
                     
                     @*Image Input will be added*@
                      
-                    <button type="submit" class="btn btn-primary">Create Course</button>
+                    <button type="submit" class="btn btn-primary">Update Course</button>
                     
                 </form>
             </div>

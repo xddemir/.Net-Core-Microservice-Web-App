@@ -1,6 +1,7 @@
 ﻿using FreeCourse.Shared.Services;
 using FreeCourse.Web.Models.CatalogDtos;
 using FreeCourse.Web.Services.Interfaces;
+using IdentityModel.Client;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -44,10 +45,36 @@ public class CourseController : Controller
 
         request.UserId = _sharedIdentityService.GetUserId;
 
-        if (!ModelState.IsValid) return View();
+        if (!ModelState.IsValid) return View(); 
 
         await _catalogService.CreateCourseAsync(request);
 
         return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Update(string id)
+    {
+        var course = await _catalogService.GetByCourseIdAsync(id);
+
+        if (course == null) return RedirectToAction(nameof(Index));
+        
+        var categories = await _catalogService.GetAllCategoryAsync();
+
+        ViewBag.categoryList = new SelectList(categories, "Id", "Name", course.Id);
+
+        CourseUpdateInput courseUpdateInput = new()
+        {
+            Id = course.Id,
+            Name = course.Name,
+            Description = course.Description,
+            Price = course.Price,
+            Feature = course.Feature,
+            CategoryId = course.CategoryId,
+            UserId = course.UserId,
+            Picture = course.Picture
+        };
+
+        return View(courseUpdateInput);
+
     }
 }

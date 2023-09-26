@@ -42,7 +42,7 @@ public class CatalogService : ICatalogService
     // localhost:5000/services/catalog/course/{courseId}
     public async Task<CourseViewModel> GetByCourseIdAsync(string courseId)
     {
-        var responses = await _httpClient.GetAsync($"category/{courseId}");
+        var responses = await _httpClient.GetAsync($"course/{courseId}");
         
         if (!responses.IsSuccessStatusCode) return null;
 
