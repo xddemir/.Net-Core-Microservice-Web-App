@@ -75,6 +75,26 @@ public class CourseController : Controller
         };
 
         return View(courseUpdateInput);
+    }
 
+
+    [HttpPost]
+    public async Task<IActionResult> Update(CourseUpdateInput request)
+    {
+        var categories = await _catalogService.GetAllCategoryAsync();
+        ViewBag.categoryList = new SelectList(categories, "Id", "Name", request.Id);
+
+        if (!ModelState.IsValid) return View();
+
+        await _catalogService.UpdateCourseAsync(request);
+
+        return RedirectToAction(nameof(Index));
+
+    }
+
+    public async Task<IActionResult> Delete(string id)
+    {
+        await _catalogService.DeleteCourseAsync(id);
+        return RedirectToAction(nameof(Index));
     }
 }
