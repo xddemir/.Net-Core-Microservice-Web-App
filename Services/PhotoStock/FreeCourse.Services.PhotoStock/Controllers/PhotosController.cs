@@ -19,7 +19,7 @@ public class PhotosController : CustomControllerBase
             using var stream = new FileStream(path, FileMode.Create);
             await stream.CopyToAsync(stream, cancellationToken);
 
-            var returnPath = "Photos/" + photo.FileName;
+            var returnPath = photo.FileName;
 
             var photoDto = new PhotoDto()
             {
@@ -34,7 +34,7 @@ public class PhotosController : CustomControllerBase
 
     public IActionResult PhotoDelete(string photoUrl)
     {
-        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/photo", photoUrl);
+        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/photos", photoUrl);
 
         if (!System.IO.File.Exists(path))
             return CreateActionResultInstance(Response<NoContent>.Fail("File does not exist", 404));
