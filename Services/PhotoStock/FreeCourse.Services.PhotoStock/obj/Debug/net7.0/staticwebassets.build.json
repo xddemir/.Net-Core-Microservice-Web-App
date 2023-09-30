@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eYU2LLADrxXtktshKgPO6ViSkQhybYKlMK2BHUAanOY=",
+  "Hash": "FfPh1JDoMTgA01QcWanEBJD1bHEHkIT88Qp7N4qSCpE=",
   "Source": "FreeCourse.Services.PhotoStock",
   "BasePath": "_content/FreeCourse.Services.PhotoStock",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\2bf1e917-e200-40d6-8169-1a4b7f770929.jpeg",
+      "Identity": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\ba890be0-8a62-4181-9f7b-e4ba688db135.jpg",
       "SourceId": "FreeCourse.Services.PhotoStock",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\",
       "BasePath": "_content/FreeCourse.Services.PhotoStock",
-      "RelativePath": "Photos/2bf1e917-e200-40d6-8169-1a4b7f770929.jpeg",
+      "RelativePath": "Photos/ba890be0-8a62-4181-9f7b-e4ba688db135.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Photos\\2bf1e917-e200-40d6-8169-1a4b7f770929.jpeg"
+      "OriginalItemSpec": "wwwroot\\Photos\\ba890be0-8a62-4181-9f7b-e4ba688db135.jpg"
     }
   ]
 }
