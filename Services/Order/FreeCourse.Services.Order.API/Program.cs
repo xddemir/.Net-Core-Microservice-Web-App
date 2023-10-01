@@ -18,7 +18,8 @@ builder.Services.AddControllers(options =>
 });
 
 builder.Services.AddDbContext<OrderDbContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), configure =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+        configure =>
     {
         configure.MigrationsAssembly("FreeCourse.Services.Order.Infrastructure");
     }));
@@ -44,8 +45,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     options.Audience = "resource_order";
     options.RequireHttpsMetadata = false;
 });
-
-
 
 var app = builder.Build();
 
