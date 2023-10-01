@@ -28,6 +28,7 @@ public class BasketController : CustomControllerBase
     [HttpPost]
     public async Task<IActionResult> SaveOrUpdateBasket(BasketDto request)
     {
+        request.UserId = _sharedIdentityService.GetUserId;
         var response = await _basketService.SaveOrUpdate(request);
         return CreateActionResultInstance(response);
     }

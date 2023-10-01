@@ -1,4 +1,5 @@
-﻿using FreeCourse.Web.Models.BasketDtos;
+﻿using FreeCourse.Shared.DTOs;
+using FreeCourse.Web.Models.BasketDtos;
 using FreeCourse.Web.Services.Interfaces;
 
 namespace FreeCourse.Web.Services;
@@ -12,29 +13,65 @@ public class BasketService : IBasketService
         _httpClient = httpClient;
     }
 
-    public Task<bool> DeleteAsync()
+    public async Task<bool> DeleteAsync()
     {
-        throw new NotImplementedException();
+        var response = await _httpClient.DeleteAsync("Basket");
+        return response.IsSuccessStatusCode;
     }
 
-    public Task<BasketViewModel> Get()
+    public async Task<BasketViewModel> Get()
     {
-        throw new NotImplementedException();
+        var response = await _httpClient.GetAsync("basket");
+        
+        if (!response.IsSuccessStatusCode) return null;
+        
+        var basketViewModel = await response.Content.ReadFromJsonAsync<Response<BasketViewModel>>();
+        return basketViewModel.Data;
     }
 
-    public Task<bool> SaveOrUpdateAsync(BasketViewModel basketViewModel)
+    public async Task<bool> SaveOrUpdateAsync(BasketViewModel basketViewModel)
     {
-        throw new NotImplementedException();
+        var response = await _httpClient.PostAsJsonAsync<BasketViewModel>("basket", basketViewModel);
+        return response.IsSuccessStatusCode;
     }
 
-    public Task AddBasketItemAsync(BasketItemViewModel basketViewModel)
+    public async Task AddBasketItemAsync(BasketItemViewModel basketViewModel)
     {
-        throw new NotImplementedException();
+        var basket = await Get();
+        if (basket == null)
+        {
+            basket = new BasketViewModel();
+            basket.BasketItems.Add(basketViewModel);
+;       }
+        else
+        {
+            if (!basket.BasketItems.Any(x => x.CourseId == basketViewModel.CourseId))
+            {
+                basket.BasketItems.Add(basketViewModel);
+            }    
+        }
+
+        await SaveOrUpdateAsync(basket);
+
     }
 
-    public Task<bool> RemoveBasketItemAsync(string courseId)
+    public async Task<bool> RemoveBasketItemAsync(string courseId)
     {
-        throw new NotImplementedException();
+        var basket = await Get();
+
+        if (basket == null) return false;
+
+        var deleteBasketItem = basket.BasketItems.FirstOrDefault(x => x.CourseId == courseId);
+
+        if (deleteBasketItem == null) return false;
+        
+        var deleteResult = basket.BasketItems.Remove(deleteBasketItem);
+
+        if (deleteResult == null) return false;
+
+        if (!basket.BasketItems.Any()) basket.DiscountCode = null;
+
+        return await SaveOrUpdateAsync(basket);
     }
 
     public Task<bool> ApplyDiscountAsync(string discountCode)
