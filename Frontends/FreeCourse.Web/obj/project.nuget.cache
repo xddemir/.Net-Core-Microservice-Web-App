@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "/NNxKHBSihDeTQwsdtmgVTeV94twWCCtnff/K5SYBvJVXd+wKKrtGUB/JYChXrdpUYdP2lkWhJMQzNXDGsZeQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Frontends\\FreeCourse.Web\\FreeCourse.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\doguk\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\identitymodel.aspnetcore\\4.3.0\\identitymodel.aspnetcore.4.3.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.0\\microsoft.aspnetcore.authentication.openidconnect.6.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.0\\microsoft.identitymodel.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.0\\microsoft.identitymodel.jsonwebtokens.7.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.0\\microsoft.identitymodel.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.0.0\\microsoft.identitymodel.protocols.7.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.0.0\\microsoft.identitymodel.protocols.openidconnect.7.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.0\\microsoft.identitymodel.tokens.7.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.0.0\\system.identitymodel.tokens.jwt.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
