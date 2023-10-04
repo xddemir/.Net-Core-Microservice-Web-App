@@ -4,13 +4,10 @@ namespace FreeCourse.Web.Models.CatalogDtos;
 
 public class CourseCreateInput
 {
-    [Required]
     public string Name { get; set; }
 
-    [Required]
     public string Description { get; set; }
     
-    [Required]
     public decimal Price { get; set; }
 
     public string? UserId { get; set; }
