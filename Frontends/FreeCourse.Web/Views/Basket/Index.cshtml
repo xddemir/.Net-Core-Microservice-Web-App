@@ -29,20 +29,50 @@
                             </tr>
                         }
                         
+                        
+                            @if (Model.HasDiscount)
+                            {
+                                <tr>
+                                    <td>Discount Rate</td>
+                                    <td colspan="2">%@Model.DiscountRate.Value</td>
+                                </tr>
+                            }
+                        
+                            <tr>
+                                <td>@(Model.HasDiscount ? "Applied Discount Price" : "Total Price")</td>
+                                <td colspan="2">@Model.TotalPrice $</td>
+                            </tr>
+                        
+                    </table>        
+                    
+                    <form asp-controller="Basket" asp-action="ApplyDiscount">
                         @if (Model.HasDiscount)
                         {
-                            <tr>
-                                <td>Discount Rate</td>
-                                <td colspan="2">%@Model.DiscountRate.Value</td>
-                            </tr>
+                            <div class="alert alert-success">"@Model.DiscountCode" applied</div>
+                            <a asp-controller="Basket" asp-action="CancelAppliedDiscount">(cancel)</a>
                         }
                         
-                        <tr>
-                            <td>@Model.HasDiscount ? "Applied Discount Price" : "Total Price"</td>
-                            <td colspan="2">@Model.TotalPrice $</td>
-                        </tr>
-                        
-                    </table>                    
+                        @if (TempData["discountStatus"] != null && (bool)TempData["discountStatus"] == false)
+                        {
+                            <div class="text-danger">
+                                Invalid Discount Code
+                            </div>
+                        }
+                        <div class="input-group mb-3">
+                            <input type="text" name="DiscountApplyInput.Code" class="form-control"/>
+                            <div asp-validation-summary="All"></div>
+                            <button class="btn btn-outline-secondary" type="submit">Submit</button>
+                         
+                        </div>
+                        @if (TempData["discountError"] != null)
+                        {
+                            <div class="text-danger">@TempData["discountError"]</div>
+                        }
+                    </form>
+                    
+                    <a class="btn btn-success" asp-controller="Order" asp-action="Checkout">Payment Info</a>
+                    <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Continue shopping</a>
+
                 }
                 else
                 {

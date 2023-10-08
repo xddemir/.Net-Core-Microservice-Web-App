@@ -1,16 +1,19 @@
 ﻿using FreeCourse.Shared.DTOs;
 using FreeCourse.Web.Models.BasketDtos;
 using FreeCourse.Web.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FreeCourse.Web.Services;
 
 public class BasketService : IBasketService
 {
     private readonly HttpClient _httpClient;
+    private readonly IDiscountService _discountService;
 
-    public BasketService(HttpClient httpClient)
+    public BasketService(HttpClient httpClient, IDiscountService discountService)
     {
         _httpClient = httpClient;
+        _discountService = discountService;
     }
 
     public async Task<bool> DeleteAsync()
@@ -74,13 +77,39 @@ public class BasketService : IBasketService
         return await SaveOrUpdateAsync(basket);
     }
 
-    public Task<bool> ApplyDiscountAsync(string discountCode)
+    public async Task<bool> ApplyDiscountAsync(string discountCode)
     {
-        throw new NotImplementedException();
+        await CancelApplyDiscoutAsnyc();
+    
+        var basket = await Get();
+
+        if (basket == null) return false;
+        
+        var response = await _discountService.GetDiscount(discountCode);
+
+        if (response == null) return false;
+
+        basket.DiscountRate = response.Rate;
+        basket.DiscountCode = response.Code;
+
+        await SaveOrUpdateAsync(basket);
+
+        return true;
+
     }
 
-    public Task<bool> CancelApplyDiscoutAsnyc()
+    public async Task<bool> CancelApplyDiscoutAsnyc()
     {
-        throw new NotImplementedException();
+        var basket = await Get();
+        if (basket == null && basket.DiscountCode == null) return false;
+
+        basket.DiscountCode = null;
+        basket.DiscountRate = null;
+
+        await SaveOrUpdateAsync(basket);
+        
+        return true;
+
     }
+    
 }

@@ -2,13 +2,18 @@
 
 public class BasketViewModel
 {
+    public BasketViewModel()
+    {
+        _BasketItems = new List<BasketItemViewModel>();
+    }
+
     public string UserId { get; set; }
     
     public string DiscountCode { get; set; }
     
     public int? DiscountRate { get; set; }
-    
-    private List<BasketItemViewModel> _BasketItems { get; set; }
+
+    private List<BasketItemViewModel> _BasketItems;
 
     public List<BasketItemViewModel> BasketItems
     {
@@ -38,7 +43,7 @@ public class BasketViewModel
 
     public bool HasDiscount
     {
-        get => !string.IsNullOrEmpty(DiscountCode);
+        get => !string.IsNullOrEmpty(DiscountCode) && DiscountRate.HasValue;
     }
     
 }   
