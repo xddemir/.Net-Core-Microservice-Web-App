@@ -37,7 +37,17 @@ public static class ServicesExtension
         {
             opt.BaseAddress = new Uri(serviceApiSettings.GatewayBaseUri + "/" + serviceApiSettings.Discount.Path);
         }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
-
+        
+        Services.AddHttpClient<IPaymentService, PaymentService>(opt =>
+        {
+            opt.BaseAddress = new Uri(serviceApiSettings.GatewayBaseUri + "/" + serviceApiSettings.Payment.Path);
+        }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+        
+        Services.AddHttpClient<IOrderService, OrderService>(opt =>
+        {
+            opt.BaseAddress = new Uri(serviceApiSettings.GatewayBaseUri + "/" + serviceApiSettings.Payment.Path);
+        }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+        
         Services.AddHttpClient<IIdentityService, IdentityService>();
     }
 }

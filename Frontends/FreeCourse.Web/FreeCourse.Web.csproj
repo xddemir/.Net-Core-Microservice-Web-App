@@ -20,4 +20,8 @@
       <Content Include="obj\Debug\net7.0\a00de02b-7a8d-46b9-a20b-4eca2123737e_FreeCourse.Web.pdb" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+
 </Project>
