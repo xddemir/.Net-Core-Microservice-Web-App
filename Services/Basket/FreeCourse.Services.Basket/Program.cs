@@ -1,8 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
+using FreeCourse.Services.Basket.Consumer;
 using FreeCourse.Services.Basket.Services;
 using FreeCourse.Services.Basket.Settings;
 using FreeCourse.Shared.Services;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -34,12 +36,33 @@ builder.Services.Configure<RedisSettings>(builder.Configuration.GetSection("Redi
 
 builder.Services.AddSingleton<RedisService>(sp =>
 {
-    var redisSettings = sp.GetRequiredService<IOptions<RedisSettings>>().Value;
-    var redis = new RedisService(redisSettings.Host, redisSettings.Port);
+    var redisSettings = sp.GetRequiredService<IOptions<RedisSettings>>();
+    var redis = new RedisService(redisSettings);
     redis.Connect();
 
     return redis;
 });
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<BasketCourseNameChangeEventConsumer>();
+
+    x.UsingRabbitMq((contex, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQURL"], "/", configurator =>
+        {
+            configurator.Username("guest");
+            configurator.Password("guest");            
+        } );
+        
+        cfg.ReceiveEndpoint("course-name-change-event-basket-service", e =>
+        {
+            e.ConfigureConsumer<BasketCourseNameChangeEventConsumer>(contex);
+        });
+    });
+});
+
+builder.Services.AddMassTransitHostedService();
 
 builder.Services.AddHttpContextAccessor();
 

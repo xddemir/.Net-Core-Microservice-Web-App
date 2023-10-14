@@ -1,4 +1,5 @@
-﻿using AutoMapper.Internal.Mappers;
+﻿using AutoMapper;
+using AutoMapper.Internal.Mappers;
 using FreeCourse.Services.Order.Application.DTOs;
 using FreeCourse.Services.Order.Application.Mapping;
 using FreeCourse.Services.Order.Application.Queries;
@@ -25,8 +26,17 @@ public class GetOrdersByUserIdQueryHandler : IRequestHandler<GetOrdersByUserIdQu
 
         if (!orders.Any()) return Response<List<OrderDto>>.Success(new List<OrderDto>(), 200);
 
-        var orderDto = ObjectMapper.Mapper.Map<List<OrderDto>>(orders);
-
+        List<OrderDto> orderDto = new List<OrderDto>();
+        try
+        {
+            orderDto = ObjectMapper.Mapper.Map<List<OrderDto>>(orders);
+            return Response<List<OrderDto>>.Success(orderDto, 200);
+        }
+        catch (AutoMapperMappingException ex)
+        {
+            var excep = ex.Message;
+        }
+        
         return Response<List<OrderDto>>.Success(orderDto, 200);
 
     }

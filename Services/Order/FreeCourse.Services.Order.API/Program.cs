@@ -1,6 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
+using FreeCourse.Services.Order.Application.Consumer;
 using FreeCourse.Services.Order.Infrastructure;
 using FreeCourse.Shared.Services;
+using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -16,6 +18,33 @@ builder.Services.AddControllers(options =>
 {
     options.Filters.Add(new AuthorizeFilter(requireAuthPolicy));
 });
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<CreateOrderMessageCommandConsumer>();
+    x.AddConsumer<CourseNameChangeEventConsumer>();
+    
+    x.UsingRabbitMq((contex, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQURL"], "/", configurator =>
+        {
+            configurator.Username("guest");
+            configurator.Password("guest");            
+        } );
+        
+        cfg.ReceiveEndpoint("order-created-service", e =>
+        {
+            e.ConfigureConsumer<CreateOrderMessageCommandConsumer>(contex);
+        });
+        
+        cfg.ReceiveEndpoint("course-name-change-event-order-service", e =>
+        {
+            e.ConfigureConsumer<CourseNameChangeEventConsumer>(contex);
+        });
+    });
+});
+
+builder.Services.AddMassTransitHostedService();
 
 builder.Services.AddDbContext<OrderDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),

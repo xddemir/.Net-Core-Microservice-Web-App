@@ -1,8 +1,24 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\1b0715f2-6323-4564-8b5d-ecdff71f370b.png",
+      "PackagePath": "staticwebassets\\Photos\\1b0715f2-6323-4564-8b5d-ecdff71f370b.png"
+    },
+    {
+      "Id": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\7155357a-2b93-4369-a607-870671b618e6.png",
+      "PackagePath": "staticwebassets\\Photos\\7155357a-2b93-4369-a607-870671b618e6.png"
+    },
+    {
+      "Id": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\7ad53f9b-b865-4866-af9d-86af8e81b198.png",
+      "PackagePath": "staticwebassets\\Photos\\7ad53f9b-b865-4866-af9d-86af8e81b198.png"
+    },
+    {
       "Id": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\8c47eccc-34f9-4e60-85ed-781dfaf9ff81.jpg",
       "PackagePath": "staticwebassets\\Photos\\8c47eccc-34f9-4e60-85ed-781dfaf9ff81.jpg"
+    },
+    {
+      "Id": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Services\\PhotoStock\\FreeCourse.Services.PhotoStock\\wwwroot\\Photos\\a5ac5dc6-c14e-4fa1-a3e5-259c5f7fc31c.png",
+      "PackagePath": "staticwebassets\\Photos\\a5ac5dc6-c14e-4fa1-a3e5-259c5f7fc31c.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FreeCourse.Services.PhotoStock.Microsoft.AspNetCore.StaticWebAssets.props",

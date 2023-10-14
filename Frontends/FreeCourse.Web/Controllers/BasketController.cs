@@ -32,7 +32,6 @@ public class BasketController : Controller
             CourseId = courseId,
             CourseName = course.Name,
             Price = course.Price,
-            Quantity = 1
         };
 
         await _basketService.AddBasketItemAsync(basketItem);

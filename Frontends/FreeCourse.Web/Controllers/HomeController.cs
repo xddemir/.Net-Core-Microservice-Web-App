@@ -21,7 +21,8 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        return View(await _catalogService.GetAllCoursesAsync());
+        var courses = await _catalogService.GetAllCoursesAsync();
+        return View(courses);
     }
 
     public IActionResult Privacy()

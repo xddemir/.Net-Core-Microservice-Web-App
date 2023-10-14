@@ -44,7 +44,7 @@ public class DiscountService : IDiscountService
     public async Task<Response<NoContent>> Update(Models.Discount discount)
     {
         var status =
-            await _dbConnection.ExecuteAsync("UPDATE discount set userId=@UserId, rate=@Rate, code=@Code WHERE id=@Id", new
+            await _dbConnection.ExecuteAsync("UPDATE discount SET userId=@UserId, rate=@Rate, code=@Code WHERE id=@Id", new
             {
                 UserId = discount.UserId,
                 Rate = discount.Rate,

@@ -28,21 +28,34 @@ public class OrderController : Controller
     [HttpPost]
     public async Task<IActionResult> Checkout(CheckoutInfoInput checkoutInfoInput)
     {
-        var orderStatus = await _orderService.CreateOrder(checkoutInfoInput);
-        if (!orderStatus.IsSuccessful)
+        // Sync
+        // var orderStatus = await _orderService.CreateOrder(checkoutInfoInput);
+        
+        // Async
+        var orderStatusSuspend = await _orderService.SuspendOrder(checkoutInfoInput);
+        
+        if (!orderStatusSuspend.IsSuccessful)
         {
             var basket = await _basketService.Get();
             ViewBag.basket = basket;
-            ViewBag.error = orderStatus.Error;
+            ViewBag.error = orderStatusSuspend.Error;
             return View();
         }
-
-        return RedirectToAction(nameof(SuccessfulCheckout), new {orderId = orderStatus.OrderId});
+        
+        // sync
+        // return RedirectToAction(nameof(SuccessfulCheckout), new {orderId = orderStatusSuspend.OrderId});
+        
+        return RedirectToAction(nameof(SuccessfulCheckout), new {orderId = new Random().Next(1, 1000)});
     }
 
     public IActionResult SuccessfulCheckout(int orderId)
     {
         ViewBag.orderId = orderId;
         return View();
+    }
+
+    public async Task<IActionResult> CheckoutHistory()
+    {
+        return View(await _orderService.GetOrder());
     }
 }

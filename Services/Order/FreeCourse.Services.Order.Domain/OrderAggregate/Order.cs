@@ -14,6 +14,7 @@ public class Order : Entity, IAggregateRoot
 
     public Order()
     {
+        _orderItems = new List<OrderItem>();
     }
 
     public Order(string buyerId, Address address)

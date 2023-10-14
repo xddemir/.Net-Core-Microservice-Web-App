@@ -40,3 +40,14 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCou
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\FreeCourse.Shared.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\FreeCourse.Shared.pdb
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\Automatonymous.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\GreenPipes.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\MassTransit.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\MassTransit.AspNetCoreIntegration.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\NewId.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\FakePayment\FreeCourse.Services.FakePayment\bin\Debug\net7.0\RabbitMQ.Client.dll

@@ -4,16 +4,16 @@ public class BasketViewModel
 {
     public BasketViewModel()
     {
-        _BasketItems = new List<BasketItemViewModel>();
+        _basketItems = new List<BasketItemViewModel>();
     }
 
-    public string UserId { get; set; }
-    
-    public string DiscountCode { get; set; }
+    public string UserId { get; set; } = "";
+
+    public string DiscountCode { get; set; } = "";
     
     public int? DiscountRate { get; set; }
 
-    private List<BasketItemViewModel> _BasketItems;
+    private List<BasketItemViewModel> _basketItems;
 
     public List<BasketItemViewModel> BasketItems
     {
@@ -21,18 +21,18 @@ public class BasketViewModel
         {
             if (HasDiscount)
             {
-                _BasketItems.ForEach(x =>
+                _basketItems.ForEach(x =>
                 {
                     var discountPrice = x.Price * ((decimal)DiscountRate.Value / 100);
                     x.AppliedDiscount(Math.Round(x.Price - discountPrice, 2));
                 });
             }
 
-            return _BasketItems;
+            return _basketItems;
         }
         set
         {
-            _BasketItems = value;
+            _basketItems = value;
         }
     }
 
