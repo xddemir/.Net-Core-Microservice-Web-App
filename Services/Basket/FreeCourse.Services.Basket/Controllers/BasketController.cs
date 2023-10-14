@@ -22,7 +22,8 @@ public class BasketController : CustomControllerBase
     [HttpGet]
     public async Task<IActionResult> GetBasket()
     {
-        return CreateActionResultInstance(await _basketService.GetBasket(_sharedIdentityService.GetUserId));
+        var baskets = await _basketService.GetBasket(_sharedIdentityService.GetUserId);
+        return CreateActionResultInstance(baskets);
     }
 
     [HttpPost]

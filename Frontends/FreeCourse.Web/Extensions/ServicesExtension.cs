@@ -45,9 +45,9 @@ public static class ServicesExtension
         
         Services.AddHttpClient<IOrderService, OrderService>(opt =>
         {
-            opt.BaseAddress = new Uri(serviceApiSettings.GatewayBaseUri + "/" + serviceApiSettings.Payment.Path);
+            opt.BaseAddress = new Uri(serviceApiSettings.GatewayBaseUri + "/" + serviceApiSettings.Order.Path);
         }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
         
-        Services.AddHttpClient<IIdentityService, IdentityService>();
+        Services.AddHttpClient<IIdentityService, IdentityService>();    
     }
 }

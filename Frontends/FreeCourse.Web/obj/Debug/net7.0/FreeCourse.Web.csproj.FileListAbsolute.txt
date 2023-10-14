@@ -46,3 +46,4 @@ C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\bin\Debug\net7.0\Newtonsoft.Json.dll

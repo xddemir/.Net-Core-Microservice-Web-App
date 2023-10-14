@@ -90,9 +90,9 @@ public class IdentityService: IIdentityService
         var authenticationProperties = new AuthenticationProperties();
         authenticationProperties.StoreTokens(new List<AuthenticationToken>()
         {
-            new AuthenticationToken(){Name = OpenIdConnectParameterNames.AccessToken, Value = token.AccessToken},
-            new AuthenticationToken(){Name = OpenIdConnectParameterNames.RefreshToken, Value = token.RefreshToken},
-            new AuthenticationToken(){Name = OpenIdConnectParameterNames.ExpiresIn, 
+            new (){Name = OpenIdConnectParameterNames.AccessToken, Value = token.AccessToken},
+            new (){Name = OpenIdConnectParameterNames.RefreshToken, Value = token.RefreshToken},
+            new (){Name = OpenIdConnectParameterNames.ExpiresIn, 
                                       Value = DateTime.Now.AddSeconds(token.ExpiresIn).ToString("O", CultureInfo.InvariantCulture)}
         });
 

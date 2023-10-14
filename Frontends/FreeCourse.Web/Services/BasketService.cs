@@ -1,7 +1,10 @@
-﻿using FreeCourse.Shared.DTOs;
+﻿using System.Text;
+using System.Text.Json;
+using FreeCourse.Shared.DTOs;
 using FreeCourse.Web.Models.BasketDtos;
 using FreeCourse.Web.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace FreeCourse.Web.Services;
 
@@ -18,7 +21,7 @@ public class BasketService : IBasketService
 
     public async Task<bool> DeleteAsync()
     {
-        var response = await _httpClient.DeleteAsync("Basket");
+        var response = await _httpClient.DeleteAsync("basket");
         return response.IsSuccessStatusCode;
     }
 
@@ -34,24 +37,29 @@ public class BasketService : IBasketService
 
     public async Task<bool> SaveOrUpdateAsync(BasketViewModel basketViewModel)
     {
-        var response = await _httpClient.PostAsJsonAsync<BasketViewModel>("basket", basketViewModel);
+        var content = JsonConvert.SerializeObject(basketViewModel);
+        var stringContent = new StringContent(content, Encoding.UTF8, "application/json");
+
+        var response = await _httpClient.PostAsync("basket", stringContent);
         return response.IsSuccessStatusCode;
     }
 
-    public async Task AddBasketItemAsync(BasketItemViewModel basketViewModel)
+    public async Task AddBasketItemAsync(BasketItemViewModel basketItemViewModel)
     {
         var basket = await Get();
-        if (basket == null)
+
+        if (basket != null)
         {
-            basket = new BasketViewModel();
-            basket.BasketItems.Add(basketViewModel);
-;       }
+            if (!basket.BasketItems.Any(x => x.CourseId == basketItemViewModel.CourseId))
+            {
+                basket.BasketItems.Add(basketItemViewModel);
+            }
+        }
         else
         {
-            if (!basket.BasketItems.Any(x => x.CourseId == basketViewModel.CourseId))
-            {
-                basket.BasketItems.Add(basketViewModel);
-            }    
+            basket = new BasketViewModel();
+
+            basket.BasketItems.Add(basketItemViewModel);
         }
 
         await SaveOrUpdateAsync(basket);
