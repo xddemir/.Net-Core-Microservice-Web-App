@@ -22,6 +22,7 @@ builder.Services.AddControllers(options =>
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<CreateOrderMessageCommandConsumer>();
+    x.AddConsumer<CourseNameChangeEventConsumer>();
     
     x.UsingRabbitMq((contex, cfg) =>
     {
@@ -36,6 +37,10 @@ builder.Services.AddMassTransit(x =>
             e.ConfigureConsumer<CreateOrderMessageCommandConsumer>(contex);
         });
         
+        cfg.ReceiveEndpoint("course-name-change-event-order-service", e =>
+        {
+            e.ConfigureConsumer<CourseNameChangeEventConsumer>(contex);
+        });
     });
 });
 

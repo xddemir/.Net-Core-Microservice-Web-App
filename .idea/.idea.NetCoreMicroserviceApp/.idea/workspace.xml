@@ -35,32 +35,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="236685db-433c-4aa4-8379-1991b72e0b54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Controllers/OrderController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/CheckoutInfoDtos/CheckoutInfoInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/FakePaymentDtos/PaymentInfoInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/OrderDtos/AddressCreateInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/OrderDtos/OrderCreateInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/OrderDtos/OrderItemCreateInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/OrderDtos/OrderItemViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/OrderDtos/OrderStatusViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/OrderDtos/OrderViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/Interfaces/IOrderService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/Interfaces/IPaymentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/PaymentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Views/Order/Checkout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Views/Order/SuccessfulCheckout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/Models/PaymentDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Extensions/ServicesExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Extensions/ServicesExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/FreeCourse.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/FreeCourse.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/ServiceApiSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/ServiceApiSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Views/Basket/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Views/Basket/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/Controllers/FakePaymentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/Controllers/FakePaymentController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/FreeCourse.Services.FakePayment.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/FreeCourse.Services.FakePayment.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="236685db-433c-4aa4-8379-1991b72e0b54" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,19 +69,12 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975bf429da2a47c2b8081c008d18db0b40600/c6/e0085fee/IMapperBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a9cfddd44d404df7a1c2cab86f79de531ac878/52/ce95e6d2/HttpClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0f0908b82ec60705e1e3640a086a55bfe3c4ec5e283d844df5b6113da7d99/Parameters.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1befb6a4e843da4ebf9659aaafe776ca95b78202d44ccdc656cede38d887020/Directory.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1eb649bf764412b3d3bc1b6c31be89e3f9b8ff1cd657bbb59ea818b2f8a43/CookieAuthenticationDefaults.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22358240469e69ab496bb4a0c7b5bb5f66f01af2f9925d8cb205bec1a0e2fc/Lazy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29d413ab2fdd934034e94d91ac54dad4fd453660b2fe63750ffc2b4b22879/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3d2663398b3e57ae6ca33d6d6035b6627b92441f52b17687a7828806cc92d/ClientAccessTokenParameters.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/99d09cd0a3b1c5f1c2176637c675fb1b3de6d18f9588ffc5d1e9185f79d6539a/IClientAccessTokenCache.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a9f154d3f92f3c10c87140c66abeeec9be3d81d5bddf77b53236a54f2c8e87f/DiscoveryDocumentRequest.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e0fb5ccd42bd4d7441c5fec287be1d51df52e118e8c61b892f3d1726c146199/IdentityServerConstants.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e74356f198b598e97eaeea83e8b7b1f2bfe27c0a39fedf86bb7dc44827fbda/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/66efbec125c33fdfb3a1bec1ed20a19604e9735174ac7196e96ed9476726/Mediator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/794bcfedceb3c6d957fbddf0e1c9a04afca77f9b5470c6859466cfba35e1ddb1/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/816dbaba8a29ece3dd3dc326642858d27d2d19142f9a2109bb04617985ec9/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8aeca8dfcec95a81b42a28e5c138e1c321e89def3fed605511172a8beaec/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b054c0bdd9e95d984153c88c90491b46d6b05d1060a2baa71765cc82e7879a3/ScopeConsumerFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cf91eb35ab781c324ad4fa382dce85631ec37cf3813529f7c92208d866c851/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/CheckoutInfoDtos/CheckoutInfoInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/ServiceApiSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -1155,12 +1123,91 @@
           </properties>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/Consumer/CreateOrderMessageCommandConsumer.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Services\Order\FreeCourse.Services.Order.Application\Consumer\CreateOrderMessageCommandConsumer.cs" initialLine="18" containingFunctionPresentation="Method 'Consume'">
+            <startOffsets>
+              <option value="584" />
+            </startOffsets>
+            <endOffsets>
+              <option value="770" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Controllers/OrderController.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Controllers\OrderController.cs" initialLine="34" containingFunctionPresentation="Method 'Checkout'">
+            <startOffsets>
+              <option value="928" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1005" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Controllers/OrderController.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Controllers\OrderController.cs" initialLine="20" containingFunctionPresentation="Method 'Checkout'">
+            <startOffsets>
+              <option value="556" />
+            </startOffsets>
+            <endOffsets>
+              <option value="596" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs</url>
+          <line>74</line>
+          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Services\OrderService.cs" initialLine="74" containingFunctionPresentation="Method 'SuspendOrder'">
+            <startOffsets>
+              <option value="2854" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3258" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Services\OrderService.cs" initialLine="26" containingFunctionPresentation="Method 'CreateOrder'">
+            <startOffsets>
+              <option value="960" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1000" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs</url>
+          <line>117</line>
+          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Services\OrderService.cs" initialLine="117" containingFunctionPresentation="Method 'GetOrder'">
+            <startOffsets>
+              <option value="4388" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4439" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#IdentityModel.Client.TokenResponse" memberName="AccessToken" />
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpRequestMessage" memberName="Options" />
+        <PinnedItemInfo parentTag="Type#System.Net.Http.HttpResponseMessage" memberName="_reasonPhrase" />
         <PinnedItemInfo parentTag="Type#FreeCourse.Web.Services.UserService" memberName="_httpClient" />
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpClient" memberName="DefaultRequestHeaders" />
         <PinnedItemInfo parentTag="Type#FreeCourse.Shared.DTOs.Response`1" memberName="Data" />

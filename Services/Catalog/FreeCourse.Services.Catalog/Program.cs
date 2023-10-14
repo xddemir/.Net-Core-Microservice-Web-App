@@ -1,5 +1,6 @@
 using FreeCourse.Services.Catalog.Services;
 using FreeCourse.Services.Catalog.Settings;
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Options;
@@ -24,6 +25,18 @@ builder.Services.AddSingleton<IDatabaseSettings>(provider => provider.GetRequire
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICourseService, CourseService>();
+
+builder.Services.AddMassTransit(x =>
+{
+    x.UsingRabbitMq((contex, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQURL"], "/", configurator =>
+        {
+            configurator.Username("guest");
+            configurator.Password("guest");            
+        } );
+    });
+});
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {

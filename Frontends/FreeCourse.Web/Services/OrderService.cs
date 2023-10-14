@@ -115,6 +115,7 @@ public class OrderService : IOrderService
 
     public async Task<List<OrderViewModel>> GetOrder()
     {
+        var content = await _httpClient.GetAsync("orders");
         var response = await _httpClient.GetFromJsonAsync<Response<List<OrderViewModel>>>("orders");
         return response.Data;
     }
