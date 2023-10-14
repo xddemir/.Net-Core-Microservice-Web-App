@@ -35,7 +35,166 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="236685db-433c-4aa4-8379-1991b72e0b54" name="Changes" comment="" />
+    <list default="true" id="236685db-433c-4aa4-8379-1991b72e0b54" name="Changes" comment="Order Service Eventual Consistency">
+      <change afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/1d8a7fa8-b02b-44b3-b38d-3dfa180f2a41_FreeCourse.Web.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/Consumer/BasketCourseNameChangeEventConsumer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/Automatonymous.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/GreenPipes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/MassTransit.AspNetCoreIntegration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/MassTransit.RabbitMqTransport.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/MassTransit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/NewId.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/RabbitMQ.Client.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/44e4ebfb-5850-433b-b97b-7aa8d53b253d_FreeCourse.Services.Basket.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/feed4629-6ab3-4cd6-a50d-352f4861ee1e_FreeCourse.Services.Basket.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/Automatonymous.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/GreenPipes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/MassTransit.AspNetCoreIntegration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/MassTransit.RabbitMqTransport.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/MassTransit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/NewId.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/RabbitMQ.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetCoreMicroserviceApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetCoreMicroserviceApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/CatalogDtos/CourseUpdateInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Models/CatalogDtos/CourseUpdateInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Validators/CourseUpdateInputValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/Validators/CourseUpdateInputValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/bin/Debug/net7.0/FreeCourse.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/FreeCourse.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/FreeCourse.Web.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/FreeCourse.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/FreeCourse.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/FreeCourse.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/FreeCourse.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/ref/FreeCourse.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/ref/FreeCourse.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/refint/FreeCourse.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/Debug/net7.0/refint/FreeCourse.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Frontends/FreeCourse.Web/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateways/FreeCourse.Gateway/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Gateways/FreeCourse.Gateway/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.IdentityServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/bin/Debug/netcoreapp3.1/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.TagHelpers.output.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/Debug/netcoreapp3.1/FreeCourse.IdentityServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServer/FreeCourse.IdentityServer/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/FreeCourse.Services.Basket.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/FreeCourse.Services.Basket.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Services.Basket.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Services.Basket.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Services.Basket.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Services.Basket.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Services.Basket.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Services.Basket.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/bin/Debug/net7.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/FreeCourse.Services.Basket.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/ref/FreeCourse.Services.Basket.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/ref/FreeCourse.Services.Basket.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/refint/FreeCourse.Services.Basket.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/Debug/net7.0/refint/FreeCourse.Services.Basket.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/FreeCourse.Services.Basket.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/FreeCourse.Services.Basket.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Basket/FreeCourse.Services.Basket/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/Services/CourseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/Services/CourseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Services.Catalog.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Services.Catalog.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Services.Catalog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Services.Catalog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Services.Catalog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Services.Catalog.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/bin/Debug/net7.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/FreeCourse.Services.Catalog.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/ref/FreeCourse.Services.Catalog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/ref/FreeCourse.Services.Catalog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/refint/FreeCourse.Services.Catalog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/Debug/net7.0/refint/FreeCourse.Services.Catalog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Catalog/FreeCourse.Services.Catalog/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Services.Discount.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Services.Discount.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Services.Discount.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Services.Discount.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/Debug/net7.0/FreeCourse.Services.Discount.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/Debug/net7.0/FreeCourse.Services.Discount.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/Debug/net7.0/FreeCourse.Services.Discount.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/Debug/net7.0/FreeCourse.Services.Discount.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/Debug/net7.0/FreeCourse.Services.Discount.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/Debug/net7.0/FreeCourse.Services.Discount.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Discount/FreeCourse.Services.Discount/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Services.FakePayment.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Services.FakePayment.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Services.FakePayment.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Services.FakePayment.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/Debug/net7.0/FreeCourse.Services.FakePayment.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/Debug/net7.0/FreeCourse.Services.FakePayment.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/Debug/net7.0/FreeCourse.Services.FakePayment.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/Debug/net7.0/FreeCourse.Services.FakePayment.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/Debug/net7.0/FreeCourse.Services.FakePayment.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/Debug/net7.0/FreeCourse.Services.FakePayment.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FakePayment/FreeCourse.Services.FakePayment/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/FreeCourse.Services.Order.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/FreeCourse.Services.Order.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/FreeCourse.Services.Order.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/FreeCourse.Services.Order.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/FreeCourse.Services.Order.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/FreeCourse.Services.Order.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/ref/FreeCourse.Services.Order.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/ref/FreeCourse.Services.Order.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/refint/FreeCourse.Services.Order.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/Debug/net7.0/refint/FreeCourse.Services.Order.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/FreeCourse.Services.Order.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/ref/FreeCourse.Services.Order.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/ref/FreeCourse.Services.Order.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/refint/FreeCourse.Services.Order.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/Debug/net7.0/refint/FreeCourse.Services.Order.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Domain.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Domain.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/Debug/net7.0/FreeCourse.Services.Order.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Order/FreeCourse.Services.Order.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Services.PhotoStock.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Services.PhotoStock.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Services.PhotoStock.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Services.PhotoStock.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/bin/Debug/net7.0/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/Debug/net7.0/FreeCourse.Services.PhotoStock.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/Debug/net7.0/FreeCourse.Services.PhotoStock.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/Debug/net7.0/FreeCourse.Services.PhotoStock.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/Debug/net7.0/FreeCourse.Services.PhotoStock.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/Debug/net7.0/FreeCourse.Services.PhotoStock.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/Debug/net7.0/FreeCourse.Services.PhotoStock.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Services/PhotoStock/FreeCourse.Services.PhotoStock/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/FreeCourse.Shared/bin/Debug/netcoreapp3.1/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/FreeCourse.Shared/bin/Debug/netcoreapp3.1/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/FreeCourse.Shared/bin/Debug/netcoreapp3.1/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/FreeCourse.Shared/bin/Debug/netcoreapp3.1/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/Debug/netcoreapp3.1/FreeCourse.Shared.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/Debug/netcoreapp3.1/FreeCourse.Shared.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/Debug/netcoreapp3.1/FreeCourse.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/Debug/netcoreapp3.1/FreeCourse.Shared.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/Debug/netcoreapp3.1/FreeCourse.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/Debug/netcoreapp3.1/FreeCourse.Shared.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/FreeCourse.Shared/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +213,7 @@
         <entry key="$PROJECT_DIR$" value="FreeCourse.Services.Order" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -88,6 +248,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2VCt18ZLF3fZpyq5JmNdgkBX9ne" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -96,35 +259,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.50461537&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.50461537",
+    "git-widget-placeholder": "FreeCourse.Web",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\doguk\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\doguk\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\doguk\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\doguk\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\doguk\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\doguk\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.FreeCourse.Web: http">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.FreeCourse.Services.Catalog: http">
     <configuration name="FreeCourse.Web" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -669,6 +832,7 @@
       <workItem from="1696672015234" duration="9370000" />
       <workItem from="1696687789737" duration="527000" />
       <workItem from="1696753326748" duration="5059000" />
+      <workItem from="1697299404130" duration="5380000" />
     </task>
     <task id="LOCAL-00001" summary="Catalog.API Initialized">
       <option name="closed" value="true" />
@@ -1046,7 +1210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696682473529</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Order Service Eventual Consistency">
+      <option name="closed" value="true" />
+      <created>1697299494992</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1697299494992</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1067,7 +1239,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="MediatR, Query&amp;Execution handler created" />
     <MESSAGE value="Migration Completed" />
     <MESSAGE value="Services.Order Fixed and tested" />
     <MESSAGE value="FakePaymentController.cs created" />
@@ -1092,24 +1263,12 @@
     <MESSAGE value="BasketController.cs created" />
     <MESSAGE value="Integration of FluentValidation.dll" />
     <MESSAGE value="Discount Service integrated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Discount Service integrated" />
+    <MESSAGE value="Order Service Eventual Consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order Service Eventual Consistency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Controllers/CourseController.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Controllers\CourseController.cs" initialLine="49" containingFunctionPresentation="Method 'Create'">
-            <startOffsets>
-              <option value="1485" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1534" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/PhotoStockService.cs</url>
           <line>32</line>
@@ -1164,19 +1323,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs</url>
-          <line>74</line>
-          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Services\OrderService.cs" initialLine="74" containingFunctionPresentation="Method 'SuspendOrder'">
-            <startOffsets>
-              <option value="2854" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3258" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs</url>
           <line>26</line>
           <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Services\OrderService.cs" initialLine="26" containingFunctionPresentation="Method 'CreateOrder'">
             <startOffsets>
@@ -1188,19 +1334,6 @@
           </properties>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Frontends/FreeCourse.Web/Services/OrderService.cs</url>
-          <line>117</line>
-          <properties documentPath="C:\Users\doguk\RiderProjects\NetCoreMicroserviceApp\Frontends\FreeCourse.Web\Services\OrderService.cs" initialLine="117" containingFunctionPresentation="Method 'GetOrder'">
-            <startOffsets>
-              <option value="4388" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4439" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -1208,7 +1341,9 @@
         <PinnedItemInfo parentTag="Type#IdentityModel.Client.TokenResponse" memberName="AccessToken" />
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpRequestMessage" memberName="Options" />
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpResponseMessage" memberName="_reasonPhrase" />
+        <PinnedItemInfo parentTag="Type#Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary" memberName="ErrorCount" />
         <PinnedItemInfo parentTag="Type#FreeCourse.Web.Services.UserService" memberName="_httpClient" />
+        <PinnedItemInfo parentTag="Type#FreeCourse.Shared.Services.SharedIdentityService" memberName="GetUserId" />
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpClient" memberName="DefaultRequestHeaders" />
         <PinnedItemInfo parentTag="Type#FreeCourse.Shared.DTOs.Response`1" memberName="Data" />
         <PinnedItemInfo parentTag="Type#System.Net.Http.HttpResponseMessage" memberName="Content" />

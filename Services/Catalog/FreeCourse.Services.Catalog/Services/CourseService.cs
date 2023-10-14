@@ -100,13 +100,13 @@ public class CourseService : ICourseService
 
         if (result == null)
             return Shared.DTOs.Response<NoContent>.Fail("Content not found", 404);
-            
+
         await _publishEndpoint.Publish<CourseNameChangedEvent>(new CourseNameChangedEvent()
         {
+            UserId = updatedCourse.UserId,
             CourseId = updatedCourse.Id,
             UpdatedName = request.Name
         });
-        ;
 
         return Shared.DTOs.Response<NoContent>.Success(204);
     }
