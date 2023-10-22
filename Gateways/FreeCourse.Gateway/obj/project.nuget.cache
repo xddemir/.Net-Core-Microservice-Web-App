@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gmOe+yGWpBjp6XFyGjTkVrf8Lk9G4CRA2Yg4uk/zRlCpnB2Tx6BZJZnVr0PX0KuRfGCjvdBhQQnjnNSGJ7EmBw==",
+  "dgSpecHash": "vDl3YcnVjZhohMJKc4YIiGll4aERrZC7kDLd8HOKscfFPixscu9f2rlnIfeglHxaCMuFn6wEw8g23kT2PmStfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\doguk\\RiderProjects\\NetCoreMicroserviceApp\\Gateways\\FreeCourse.Gateway\\FreeCourse.Gateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\doguk\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.11\\microsoft.aspnetcore.authentication.jwtbearer.7.0.11.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.5\\microsoft.aspnetcore.jsonpatch.7.0.5.nupkg.sha512",
     "C:\\Users\\doguk\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\7.0.5\\microsoft.aspnetcore.middlewareanalysis.7.0.5.nupkg.sha512",
