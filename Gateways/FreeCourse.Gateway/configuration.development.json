@@ -89,11 +89,9 @@
         "Delete"
       ],
       "UpstreamScheme": "http",
+      "DelegatingHandlers": ["TokenExchangeDelegateHandler"],
       "AuthenticationOptions": {
-        "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": [
-          "discount_fullpermission"
-        ]
+        "AuthenticationProviderKey": "GatewayAuthenticationScheme"
       }
     },
     {
@@ -137,11 +135,9 @@
         "Delete"
       ],
       "UpstreamScheme": "http",
+      "DelegatingHandlers": ["TokenExchangeDelegateHandler"],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": [
-          "fakepayment_fullpermission"
-        ]
       }
     }
   ],
